@@ -362,6 +362,7 @@ func (s *rpcServer) Register() error {
 	service := &registry.Service{
 		Name:      config.Name,
 		Version:   config.Version,
+		Metadata:  config.Metadata,
 		Nodes:     []*registry.Node{node},
 		Endpoints: endpoints,
 	}
